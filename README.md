@@ -15,7 +15,7 @@
 - add img src for each radio buttons (representing pokemons)
 - we want a single button to "catch pokemon"
 
-##State initilizer 
+##State initilizer (what is being tracked?)
 - set up the "times encountered" (ea. pokemon)
 - set up the "times caught" (ea. pokemon)
 - let capture start at 0 
@@ -31,4 +31,4 @@
 #Functions
 - To generate 3 pokemons
     - Add Array with indexes
-- Index will randomly select 3 diff pokemon
+- Index will randomly select 3 diff 
