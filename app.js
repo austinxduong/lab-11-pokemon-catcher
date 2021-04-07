@@ -23,10 +23,22 @@ function createPokeDom() {
     label1.append(img1);
     radio1.value = threePokemon[0].pokemon;
 
-    
+    const img2 = document.querySelector('#poke2-img');
+
+    img2.src = threePokemon[1].url_image;
+    label2.append(img2);
+    radio2.value = threePokemon[1].pokemon;
+
+    const img3 = document.querySelector('#poke3-img');
+
+    img3.src = threePokemon[2].url_image;
+    label3.append(img3);
+    radio3.value = threePokemon[2].pokemon;  
 }
 
 createPokeDom();
+
+
 
 button.addEventListener('click', () => {
     const selectedRadio = document.querySelector('input:checked');
@@ -34,6 +46,12 @@ button.addEventListener('click', () => {
     const pokeBall = findByPokemonName(selectedRadio.value);
 
     capturePokemon(pokeBall);
+
+    if (totalCaptures >= 10) {
+        window.location = '../results';
+
+    }
+
     createPokeDom();
 });
 

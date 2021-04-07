@@ -5,11 +5,13 @@ export function findById(array, id) {
 
 }
 
-console.log(findById);
+//console.log(findById);
 
 export function findByPokemonName(name) {
     return pokemonList.find(poke => name === poke.pokemon);
 
 }
+
+//console.log(findByPokemonName);
 
 
