@@ -110,5 +110,19 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
+}
 
-  }
+img {
+    width: 120px;
+}
+
+button {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+
+
+
+

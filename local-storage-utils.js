@@ -57,4 +57,7 @@ export function capturePokemon(pokemon) {
 
     return pokeDex;
 
+
 }
+
+//console.log(capturePokemon);
