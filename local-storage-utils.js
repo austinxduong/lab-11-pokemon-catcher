@@ -55,6 +55,8 @@ export function capturePokemon(pokemon) {
 
     matchingPokedexItem.captured++;
 
+    setPokeDex(pokeDex);
+
     return pokeDex;
 
 

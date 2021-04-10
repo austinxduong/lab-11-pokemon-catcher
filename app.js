@@ -52,8 +52,6 @@ button.addEventListener('click', () => {
 
     if (totalCaptures >= 10) { 
         window.location = '../results';
-        localStorage.clear();
-
     }
 
     createPokeDom();
