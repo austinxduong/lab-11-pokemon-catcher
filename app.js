@@ -6,6 +6,8 @@ import { findByPokemonName } from './utils.js';
 // import functions and grab DOM elements
 const button = document.querySelector('button');
 
+let totalCaptures = 0;
+
 function createPokeDom() {
     const radio1 = document.querySelector('#poke1-radio');
     const radio2 = document.querySelector('#poke2-radio');
@@ -41,18 +43,22 @@ createPokeDom();
 
 
 button.addEventListener('click', () => {
+    totalCaptures++;
     const selectedRadio = document.querySelector('input:checked');
 
     const pokeBall = findByPokemonName(selectedRadio.value);
 
     capturePokemon(pokeBall);
 
-    if (totalCaptures >= 10) {
+    if (totalCaptures >= 10) { 
         window.location = '../results';
+        localStorage.clear();
 
     }
 
     createPokeDom();
+
+
 });
 
 
