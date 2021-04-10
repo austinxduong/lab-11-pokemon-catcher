@@ -51,7 +51,7 @@ button.addEventListener('click', () => {
     capturePokemon(pokeBall);
 
     if (totalCaptures >= 10) { 
-        window.location = './results';
+        window.location = '../results';
     }
 
     createPokeDom();
